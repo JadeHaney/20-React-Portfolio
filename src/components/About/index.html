@@ -1,74 +1,45 @@
 import React from "react";
 import PortfolioImage from "../../assets/PortfolioImage.JPG";
-import {
-  FaGitAlt,
-  FaGithub,
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaBootstrap,
-  FaNode,
-  FaReact,
-  FaNpm,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, FaNode } from "react-icons/fa";
 import { DiJqueryLogo, DiMongodb } from "react-icons/di";
-import {
-  SiMysql,
-  SiHeroku,
-  SiWebpack,
-  SiRedux,
-  SiReactrouter,
-  SiGraphql,
-} from "react-icons/si";
+import { SiRedux, SiMysql, SiGraphql, SiHeroku, SiWebpack, SiReactrouter } from "react-icons/si";
 
 function About() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-6">
-          <img
-            src={PortfolioImage}
-            className="my-2"
-            style={{ width: "60%" }}
-            alt="cover"
-          ></img>
+        <div className="col-md-6">
+          <img src={PortfolioImage} className="img-thumbnail" alt="cover" style={{ width: "100%" }} />
         </div>
-        <div className="col-6">
-          <h1 id="about">About me</h1>
-          <h6 style={{ width: "80%", justifyContent: "center" }} id="about">
-            Hi! My name is Jennifer and I'm a full-stack software engineer
-            leveraging background in clinical healthcare. I am a graduate of UC
-            Berkeley Extension's Web Development Bootcamp, which provided me a
-            strong foundation in object-oriented programming of progressive web
-            applications using the MongoDB, Express, React and Node.js (MERN)
-            JavaScript stack. In my previous role working with patients in
-            opthalmology, I was responsible for addressing their concerns with
-            care and efficiency. This experience has made me effective at combining
-            creativity, problem solving, and empathy to develop user-friendly
-            applications.
-            <br></br>
-            <br></br>Seeing the need for greater ease of use and
-            access to medical resources, I hope to create patient-focused
-            applications that will connect and encourage people to live happier,
-            more health-minded lifestyles. Let's connect- I'm excited to learn a new technology and innovate with the user in mind👩🏻‍💻
-          </h6>
-          <br></br>
-          <br></br>
-          <br></br>
+        <div className="col-md-6">
+          <h1 id="about">About Me</h1>
+          <p>
+            Hello! I'm Jade Hamey, a proficient full-stack software engineer with a rich background in the realms of creativity and artistry. Equipped with a fervent enthusiasm for software engineering, I am eagerly poised to embark on a dynamic journey in my burgeoning career.
+          </p>
+          <p>
+            I attained my expertise through the University of Minnesota Full-Stack Coding Bootcamp, where I honed my skills in crafting robust web applications utilizing the MongoDB, Express, React, and Node.js (MERN) JavaScript stack.
+          </p>
+          <p>
+            I am deeply committed to prioritizing the user experience in my web applications. I am eager to immerse myself in new technologies and contribute meaningfully to the advancement of software engineering. Let's embark on this exciting endeavor together! 👩🏻‍💻
+          </p>
+          <br />
           <h4>Technical Skills:</h4>
-          <h2>
-            <FaHtml5 />
-            <FaCss3Alt />
-            <FaJsSquare />
-            <DiJqueryLogo />
-            <FaReact />
-            <SiRedux />
-            <FaBootstrap />
-            <FaNode />
-            <SiMysql />
-            <DiMongodb />
-            <SiGraphql />
-          </h2>
+          <div>
+            <FaHtml5 size={30} />
+            <FaCss3Alt size={30} />
+            <FaJsSquare size={30} />
+            <DiJqueryLogo size={30} />
+            <FaReact size={30} />
+            <SiRedux size={30} />
+            <FaBootstrap size={30} />
+            <FaNode size={30} />
+            <SiMysql size={30} />
+            <DiMongodb size={30} />
+            <SiGraphql size={30} />
+            <SiHeroku size={30} />
+            <SiWebpack size={30} />
+            <SiReactrouter size={30} />
+          </div>
         </div>
       </div>
     </div>
